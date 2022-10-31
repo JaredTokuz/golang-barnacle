@@ -1,0 +1,14 @@
+go mod init mongodb-quickstart
+go get go.mongodb.org/mongo-driver
+
+If connection fails
+
+update the /etc/resolv.conf to contain a record for nameserver 1.1.1.1 or 8.8.8.8
+more information found here: https://stackoverflow.com/questions/55660134/cant-connect-to-mongo-cloud-mongodb-database-in-golang-on-ubuntu
+
+set permanent changes to resolv.conf here:
+    https://www.tecmint.com/set-permanent-dns-nameservers-in-ubuntu-debian/
+
+view/install golang env library at:
+    https://github.com/joho/godotenv
+    go get github.com/joho/godotenv/cmd/godotenv

@@ -1,0 +1,26 @@
+in order to use struct from a different file compile the files using go build
+
+Example:
+
+go build simple-chi.go todos.go usrs.go
+
+TLS
+
+use openssl to generate a self signed certificate
+
+openssl req -new -newkey rsa:2048 -nodes -keyout localhost.key -out localhost.csr
+openssl x509 -req -days 365 -in localhost.csr -signkey localhost.key -out localhost.crt
+
+then locally install by doing:
+
+sudo cp localhost.crt /etc/ssl/certs/
+sudo cp localhost.key /etc/ssl/private/
+
+install docker
+https://docs.docker.com/engine/install/ubuntu/
+https://docs.docker.com/engine/install/linux-postinstall/
+
+
+simple request & response service
+https://httpbin.org
+

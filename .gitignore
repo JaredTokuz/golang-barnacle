@@ -1,0 +1,4 @@
+.githubtoken
+.vscode
+.env
+*/.env
